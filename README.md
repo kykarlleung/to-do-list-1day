@@ -2,7 +2,7 @@
 
 link: https://to-do-list-1day.herokuapp.com/
 </br></br>
-A simple 1Day-to-do-list that help you orgainize your day.
+A simple 1Day-to-do-list that helps you orgainize your day.
 
 <img src='to-do-list-img.png' width='80%'>
 
