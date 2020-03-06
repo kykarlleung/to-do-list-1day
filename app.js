@@ -8,8 +8,8 @@ app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static('public'))
 
-const lists = ['l1', 'l2', 'l3'];
-const works = ['w1', 'w2', 'w3'];
+const lists = [];
+const works = [];
 
 app.get('/', (req, res) => {
     const dayInfo = date.getDate();
