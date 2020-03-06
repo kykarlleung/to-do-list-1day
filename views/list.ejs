@@ -1,0 +1,27 @@
+<%- include("header") -%>
+
+<div class='box header-box' id='heading'>
+        <h1><%=title%></h1>
+</div>
+
+<div class='box'>
+    <% for(let i=0; i<lists.length; i++) { %>
+    <div class='item'>
+        <input type='checkbox'>
+        <p><%= lists[i] %></p>
+        <form class='form-btn' action='/' method='post'>
+            <button type='submit' name='up' value='<%= i %>::<%= title %>' class='order-button'>↑</button>
+            <button type='submit' name='down' value='<%= i %>::<%= title %>' class='order-button'>↓</button>
+            <button type='submit' name='delete' value='<%= i %>::<%= title %>' class='delete-button'>-</button>
+        </form>
+
+    </div>
+    <% } %>
+
+    <form class='item' action='/' method='post'>
+        <input type='text' placeholder='New Item' name='item'>
+        <button type='submit' name='list' value=<%= title %>>+</button>
+    </form>
+</div>
+
+<%- include("footer") -%>
